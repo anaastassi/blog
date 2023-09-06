@@ -1,0 +1,167 @@
+/* The side navigation menu */
+.articles {
+  overflow: hidden;
+  display: flex;
+}
+.sidebar {
+  min-width: fit-content;
+  overflow: auto;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  text-decoration: underline;
+  color: white;
+  text-underline-offset: 10px;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.contentArticles {
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+.card a {
+  color: #ababab;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: inline-block;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card a img {
+  width: 24px;
+  height: 24px;
+  display: inline;
+}
+.card {
+  background-color: black;
+}
+.articleGrid {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+.blackArrow {
+  width: 23px;
+  height: 11.8px;
+}
+.secondBtn {
+  display: flex;
+  padding: 22px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 100px;
+  background: #fff;
+  padding: 22px 22px;
+  height: 57px;
+  width: fit-content;
+  margin: auto;
+  font-size: 20px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 700;
+  color: black;
+}
+.btnInside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: auto;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 992px) {
+  .secondBtn {
+    width: 100%;
+    max-width: 390px;
+    display: flex;
+    padding: 24px 22px;
+    height: 61px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 100px;
+    background: #fff;
+  }
+
+  .articles {
+    flex-direction: column;
+  }
+  .articleGrid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+  }
+  .sidebar {
+    max-width: fit-content;
+    overflow: auto;
+    white-space: nowrap;
+    height: auto;
+    position: relative;
+    /* margin: auto; */
+    min-width: 0;
+    flex-direction: row;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.contentArticles {
+    margin-left: 0;
+  }
+  .sidebar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .sidebar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 470px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  .articleGrid {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
+  .sidebar {
+    overflow: auto;
+    white-space: nowrap;
+    overflow: scroll;
+    height: auto;
+    position: relative;
+    /* margin: auto; */
+  }
+}

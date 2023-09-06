@@ -1,0 +1,103 @@
+@import url("header.css");
+@import url("mainpage.css");
+@import url("articles.css");
+@import url("order.css");
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600;700&display=swap");
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Darker Grotesque", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.bodyXs {
+  font-weight: 700;
+  font-size: 16px;
+  font-style: normal;
+}
+.bodyXl {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.96px;
+}
+.bodyM {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  color: #ababab;
+}
+.content {
+  max-width: 1220px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 48px */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.subtitle {
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  color: #ababab;
+}
+.marginAuto {
+  margin: auto;
+}
+@media screen and (min-width: 992px) {
+  .title {
+    font-size: 62px;
+    letter-spacing: 1.24px;
+  }
+  .subtitle {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.6px;
+  }
+  .bodyM {
+    color: #ababab;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.78px;
+  }
+  .bodyXl {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.02px;
+  }
+}

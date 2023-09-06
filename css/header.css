@@ -1,0 +1,66 @@
+.logo {
+  background-image: url(../img/logo.png);
+  background-size: cover;
+  width: 91.51px;
+  height: 40.44px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+}
+.dropdown-toggle::after {
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 0.5rem;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.btnMain {
+  display: flex;
+  margin: auto;
+  padding: 22px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 100px;
+  background: #fff;
+  color: black;
+  height: 55px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 700;
+  padding: 22px 22px 22px 22px;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+.menuItems {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: auto;
+}
+.navbar-nav {
+  justify-content: space-between !important;
+  width: 100%;
+}
+.navbar > .container-fluid {
+  --bs-gutter-x: 0 !important;
+}
+.nav-item {
+  flex-direction: column !important;
+}
+.navbar-toggler-icon {
+  background-image: url(../img/navbar-toggle.png) !important;
+  width: 24px;
+  height: 16px;
+}
+
+@media screen and (min-width: 992px) {
+  .menuItems {
+    display: flex;
+    flex-direction: row;
+  }
+}
