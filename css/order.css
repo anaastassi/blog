@@ -5,6 +5,7 @@
 }
 .orderProject {
   background-image: url(../img/orderBg.png);
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom right;
