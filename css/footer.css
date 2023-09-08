@@ -80,6 +80,30 @@
   width: 100%;
   max-width: 1200px;
 }
+.in{
+  background-image: url(../img/in.png);
+  background-size: cover;
+}
+.facebook{
+  background-image: url(../img/facebook.png);
+  background-size: cover;
+}
+.insta{
+  background-image: url(../img/instagram.png);
+  background-size: cover;
+}
+.in:hover{
+  background-image: url(../img/inHover.png);
+  background-size: cover;
+}
+.facebook:hover{
+  background-image: url(../img/facebookHover.png);
+  background-size: cover;
+}
+.insta:hover{
+  background-image: url(../img/instaHover.png);
+  background-size: cover;
+}
 @media screen and (min-width: 992px) {
   .footer .reviewed {
     font-size: 16px;
