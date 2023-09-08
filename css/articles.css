@@ -19,20 +19,26 @@
   display: block;
   padding: 12px;
   text-decoration: none;
+  position: relative;
 }
 
-/* Active/current link */
-.sidebar a.active {
-  text-decoration: underline;
-  color: white;
-  text-underline-offset: 10px;
+.sidebar a:hover::after {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 8px;
+  position: absolute;
+  background: white;
+  width: 85%;
+  animation: ss 0.5s;
 }
-
-/* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-  text-decoration: underline;
-  text-underline-offset: 10px;
-  color: white;
+@keyframes ss {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
 }
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
@@ -60,6 +66,7 @@ div.contentArticles {
 }
 .card {
   background-color: black;
+  overflow: hidden;
 }
 .articleGrid {
   margin-top: 40px;
@@ -96,31 +103,59 @@ div.contentArticles {
   gap: 12px;
   margin: auto;
 }
-.arrowImg{
-  background-image:url("../img/blackArrow.png");
+.arrowImg {
+  background-image: url("../img/blackArrow.png");
   background-size: cover;
-  width:23px;
-  height:11px;
+  width: 23px;
+  height: 11px;
 }
-.letsTalkArrow{
-  background-image:url("../img/whiteArrow.png");
+.letsTalkArrow {
+  background-image: url("../img/whiteArrow.png");
   background-size: cover;
-  width:23px;
-  height:11px;
+  width: 23px;
+  height: 11px;
 }
-#letsTalkBtn:hover{
+#letsTalkBtn:hover {
   background-color: white;
   color: black;
 }
-#letsTalkBtn:hover .letsTalkArrow{
-  background-image:url("../img/blackArrow.png");
+#letsTalkBtn:hover .letsTalkArrow {
+  background-image: url("../img/blackArrow.png");
+  transform: translateX(3px);
 }
-.button:hover .arrowImg{
-  background-image:url("../img/whiteArrow.png");
+.button:hover .arrowImg {
+  background-image: url("../img/whiteArrow.png");
+  transform: translateX(3px);
+}
+.card a:hover .grayArrow {
+  background-image: url("../img/readArrow.png");
+  transform: translateX(10px);
+}
+.card a div:hover {
+  color: white;
+}
+.grayArrow {
+  background-image: url(../img/arrow.png);
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+.aFlex {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+.borderDiv {
+  overflow: hidden;
+  border-radius: 12px;
+}
+.card:hover .card-img-top {
+  transform: scale(120%);
 }
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 992px) {
-  .card a {
+  x§ .card a {
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;

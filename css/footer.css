@@ -9,6 +9,9 @@
   margin: auto;
   gap: 5px;
 }
+.footer a {
+  color: white;
+}
 .footer .reviewed {
   color: white;
   font-size: 8px;
@@ -80,27 +83,27 @@
   width: 100%;
   max-width: 1200px;
 }
-.in{
+.in {
   background-image: url(../img/in.png);
   background-size: cover;
 }
-.facebook{
+.facebook {
   background-image: url(../img/facebook.png);
   background-size: cover;
 }
-.insta{
+.insta {
   background-image: url(../img/instagram.png);
   background-size: cover;
 }
-.in:hover{
+.in:hover {
   background-image: url(../img/inHover.png);
   background-size: cover;
 }
-.facebook:hover{
+.facebook:hover {
   background-image: url(../img/facebookHover.png);
   background-size: cover;
 }
-.insta:hover{
+.insta:hover {
   background-image: url(../img/instaHover.png);
   background-size: cover;
 }
