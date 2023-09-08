@@ -96,7 +96,28 @@ div.contentArticles {
   gap: 12px;
   margin: auto;
 }
-
+.arrowImg{
+  background-image:url("../img/blackArrow.png");
+  background-size: cover;
+  width:23px;
+  height:11px;
+}
+.letsTalkArrow{
+  background-image:url("../img/whiteArrow.png");
+  background-size: cover;
+  width:23px;
+  height:11px;
+}
+#letsTalkBtn:hover{
+  background-color: white;
+  color: black;
+}
+#letsTalkBtn:hover .letsTalkArrow{
+  background-image:url("../img/blackArrow.png");
+}
+.button:hover .arrowImg{
+  background-image:url("../img/whiteArrow.png");
+}
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 992px) {
   .card a {

@@ -32,6 +32,11 @@ a:hover {
   font-weight: 600;
   line-height: normal;
 }
+.button:hover{
+  background-color: black;
+  color: white;
+  border: 1px solid  #FFF;
+}
 .bodyL {
   font-family: Montserrat;
   font-size: 14px;
