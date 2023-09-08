@@ -27,9 +27,6 @@
   color: black;
   height: 55px;
   text-align: center;
-  font-size: 20px;
-  font-family: "Darker Grotesque", sans-serif;
-  font-weight: 700;
   padding: 22px 22px 22px 22px;
 }
 .nav-item {
@@ -57,10 +54,22 @@
   width: 24px;
   height: 16px;
 }
+.header .bodyXs {
+  font-size: 12px;
+}
 
 @media screen and (min-width: 992px) {
   .menuItems {
     display: flex;
     flex-direction: row;
+  }
+}
+@media screen and (min-width: 1088px) {
+  .menuItems {
+    display: flex;
+    flex-direction: row;
+  }
+  .header .bodyXs {
+    font-size: 16px;
   }
 }

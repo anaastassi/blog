@@ -1,0 +1,138 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 80px;
+  max-width: 1220px;
+  margin: auto;
+  gap: 5px;
+}
+.footer .reviewed {
+  color: white;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.footer .bodyS {
+  font-family: Montserrat;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+.starImg {
+  width: 10px;
+  height: 9.545px;
+}
+.starFlex {
+  display: flex;
+  gap: 5px;
+}
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.footerDiv {
+  width: fit-content;
+}
+.footerTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  color: #ababab;
+}
+.socialImg {
+  width: 24px;
+  height: 24px;
+}
+.footer .bodyXl {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+.afterFooter {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  justify-content: space-between;
+  gap: 107px;
+  border-top: 1px solid var(--Neutral-700, #404040);
+  color: #ababab;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+@media screen and (min-width: 992px) {
+  .footer .reviewed {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .starImg {
+    width: 14px;
+    height: 13.363px;
+  }
+  .socialImg {
+    width: 30px;
+    height: 30px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+  }
+  .footerTitle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .footerContent {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 20px;
+  }
+  .footer .bodyS {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.54px;
+  }
+  .footer .bodyXl {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.9px;
+  }
+  .afterFooter {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 100px;
+  }
+}

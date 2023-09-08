@@ -2,12 +2,12 @@
 @import url("mainpage.css");
 @import url("articles.css");
 @import url("order.css");
-@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600;700&display=swap");
-
+@import url("footer.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 body {
   background-color: black;
   color: white;
-  font-family: "Darker Grotesque", sans-serif;
+  font-family: Montserrat;
 }
 * {
   margin: 0;
@@ -25,24 +25,59 @@ a {
 a:hover {
   text-decoration: none;
 }
-.bodyXs {
-  font-weight: 700;
-  font-size: 16px;
-  font-style: normal;
-}
-.bodyXl {
-  font-size: 32px;
+.button {
+  font-family: Montserrat;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: 0.96px;
 }
-.bodyM {
-  font-size: 16px;
+.bodyL {
+  font-family: Montserrat;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
   letter-spacing: 0.48px;
+}
+.bodyXs {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.bodyXl {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+.bodyS {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.headline {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 105%; /* 25.2px */
+  letter-spacing: 0.48px;
+}
+.bodyM {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.42px;
   color: #ababab;
 }
 .content {
@@ -53,16 +88,18 @@ a:hover {
 }
 .title {
   text-align: center;
-  font-size: 40px;
+  font-family: Montserrat;
+  font-size: 30px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 120%; /* 48px */
-  letter-spacing: 0.8px;
+  font-weight: 600;
+  line-height: 120%; /* 36px */
+  letter-spacing: 0.6px;
   text-transform: uppercase;
   margin-bottom: 0;
 }
 .subtitle {
-  text-align: center;
+  text-align: left;
+  font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -75,29 +112,60 @@ a:hover {
 }
 @media screen and (min-width: 992px) {
   .title {
-    font-size: 62px;
-    letter-spacing: 1.24px;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
   }
   .subtitle {
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.54px;
+  }
+  .bodyL {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
   }
   .bodyM {
     color: #ababab;
-    font-size: 26px;
+    font-size: 22px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
-    letter-spacing: 0.78px;
+    letter-spacing: 0.66px;
   }
   .bodyXl {
-    font-size: 34px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.9px;
+  }
+  .button {
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    letter-spacing: 1.02px;
+  }
+  .bodyS {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.54px;
+  }
+  .headline {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.8px;
   }
 }

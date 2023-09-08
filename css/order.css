@@ -1,8 +1,30 @@
 .letsTalkBtn {
   background-color: black;
   color: white;
+  margin-top: 40px;
 }
 .orderProject {
   background-image: url(../img/orderBg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
   text-align: center;
+  margin-top: 80px;
+  padding-top: 80px;
+  padding-bottom: 89px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.orderProject .bodyS {
+  margin-top: 30px;
+}
+@media screen and (min-width: 992px) {
+  .orderProject .bodyS {
+    margin-top: 20px;
+  }
+  .orderProject {
+    margin-top: 180px;
+    padding-top: 107px;
+    padding-bottom: 109px;
+  }
 }

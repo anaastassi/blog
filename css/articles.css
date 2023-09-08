@@ -17,7 +17,7 @@
 /* Sidebar links */
 .sidebar a {
   display: block;
-  padding: 10px;
+  padding: 12px;
   text-decoration: none;
 }
 
@@ -37,12 +37,11 @@
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.contentArticles {
-  margin-left: 200px;
-  padding: 1px 16px;
+  margin-left: 116px;
 }
 .card a {
   color: #ababab;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -52,6 +51,7 @@ div.contentArticles {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-left: 0 !important;
 }
 .card a img {
   width: 24px;
@@ -99,6 +99,13 @@ div.contentArticles {
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 992px) {
+  .card a {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
   .secondBtn {
     width: 100%;
     max-width: 390px;
@@ -129,6 +136,7 @@ div.contentArticles {
     /* margin: auto; */
     min-width: 0;
     flex-direction: row;
+    margin-bottom: 60px;
   }
   .sidebar a {
     float: left;
