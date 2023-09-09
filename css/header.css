@@ -16,6 +16,20 @@
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
+.dropdown-item {
+  padding-left: var(--bs-navbar-nav-link-padding-x);
+  color: white;
+  font-weight: 400;
+}
+
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:focus-visible {
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
 .btnMain {
   display: flex;
   margin: auto;

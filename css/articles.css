@@ -22,6 +22,9 @@
   position: relative;
 }
 
+.sidebar a:hover {
+  color: white;
+}
 .sidebar a:hover::after {
   content: "";
   display: block;
@@ -30,7 +33,7 @@
   position: absolute;
   background: white;
   width: 85%;
-  animation: ss 0.5s;
+  animation: ss 0.2s;
 }
 @keyframes ss {
   from {
@@ -67,6 +70,7 @@ div.contentArticles {
 .card {
   background-color: black;
   overflow: hidden;
+  cursor: pointer;
 }
 .articleGrid {
   margin-top: 40px;
