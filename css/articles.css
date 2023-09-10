@@ -47,7 +47,7 @@
   position: absolute;
   background: white;
   width: 85%;
-  animation: ss 0.3s;
+  animation: ss 0.2s;
 }
 @keyframes ss {
   from {
@@ -85,6 +85,7 @@ div.contentArticles {
   background-color: black;
   overflow: hidden;
   cursor: pointer;
+  transition-duration: 0.3s;
 }
 .articleGrid {
   margin-top: 40px;
@@ -167,6 +168,9 @@ div.contentArticles {
 .borderDiv {
   overflow: hidden;
   border-radius: 12px;
+}
+.card-img-top{
+  transition-duration: 0.3s;
 }
 .card:hover .card-img-top {
   transform: scale(110%);
