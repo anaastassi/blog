@@ -23,7 +23,19 @@
   text-decoration: none;
   position: relative;
 }
-
+.articles .sidebar .active::after {
+  content: "";
+  display: block;
+  height: 1px;
+  margin-top: 8px;
+  position: absolute;
+  background: white;
+  width: 85%;
+  animation: ss 0.3s;
+}
+.articles .sidebar .active{
+  color: white;
+}
 .sidebar a:hover {
   color: white;
 }
@@ -157,7 +169,7 @@ div.contentArticles {
   border-radius: 12px;
 }
 .card:hover .card-img-top {
-  transform: scale(120%);
+  transform: scale(110%);
 }
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 992px) {
