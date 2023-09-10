@@ -177,7 +177,7 @@ div.contentArticles {
 }
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 992px) {
-  x§ .card a {
+  .card a {
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
