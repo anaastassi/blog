@@ -35,7 +35,7 @@
   position: absolute;
   background: white;
   width: 85%;
-  animation: ss 0.2s;
+  animation: ss 0.3s;
 }
 @keyframes ss {
   from {
