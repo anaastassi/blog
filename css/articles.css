@@ -1,6 +1,6 @@
 /* The side navigation menu */
 .articles {
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
 }
 .sidebar {
@@ -10,7 +10,9 @@
   margin: 0;
   padding: 0;
   height: 100%;
-  display: flex;
+  /* display: flex; */
+  position: sticky;
+  top: 0;
   flex-direction: column;
 }
 
@@ -181,6 +183,7 @@ div.contentArticles {
 
   .articles {
     flex-direction: column;
+    overflow: hidden;
   }
   .articleGrid {
     grid-template-columns: 1fr 1fr;
@@ -188,6 +191,7 @@ div.contentArticles {
     row-gap: 40px;
   }
   .sidebar {
+    display: flex;
     max-width: fit-content;
     overflow: auto;
     white-space: nowrap;
