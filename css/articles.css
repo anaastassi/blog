@@ -33,7 +33,7 @@
   width: 85%;
   animation: ss 0.3s;
 }
-.articles .sidebar .active{
+.articles .sidebar .active {
   color: white;
 }
 .sidebar a:hover {
@@ -62,7 +62,7 @@
 div.contentArticles {
   margin-left: 116px;
 }
-.card a {
+.card .readPostLink {
   color: #ababab;
   font-size: 18px;
   font-style: normal;
@@ -76,7 +76,7 @@ div.contentArticles {
   justify-content: space-between;
   padding-left: 0 !important;
 }
-.card a img {
+.card .readPostLink img {
   width: 24px;
   height: 24px;
   display: inline;
@@ -86,6 +86,9 @@ div.contentArticles {
   overflow: hidden;
   cursor: pointer;
   transition-duration: 0.3s;
+}
+.card .card-title {
+  color: #fff;
 }
 .articleGrid {
   margin-top: 40px;
@@ -146,11 +149,11 @@ div.contentArticles {
   background-image: url("../img/whiteArrow.png");
   transform: translateX(3px);
 }
-.card a:hover .grayArrow {
+.card .readPostLink:hover .grayArrow {
   background-image: url("../img/readArrow.png");
   transform: translateX(10px);
 }
-.card a div:hover {
+.card .readPostLink div:hover {
   color: white;
 }
 .grayArrow {
@@ -169,7 +172,7 @@ div.contentArticles {
   overflow: hidden;
   border-radius: 12px;
 }
-.card-img-top{
+.card-img-top {
   transition-duration: 0.3s;
 }
 .card:hover .card-img-top {
@@ -177,7 +180,7 @@ div.contentArticles {
 }
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 992px) {
-  .card a {
+  .card .readPostLink {
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
